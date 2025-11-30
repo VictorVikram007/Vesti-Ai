@@ -7,6 +7,7 @@ import { useToast } from "@/hooks/use-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { Eye, EyeOff, Mail, Lock } from "lucide-react";
 import { useAuth } from "@/context/AuthContext";
+import logoUrl from '/logo.png';
 
 const Login = () => {
   const { toast } = useToast();
@@ -50,11 +51,6 @@ const Login = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-wardrobe-teal/10 to-wardrobe-navy/10 flex items-center justify-center p-4">
-      import logoUrl from '/logo.png';
-
-const Login = () => {
-  const { toast } = useToast();
-// ... existing code ...
       <div className="w-full max-w-md">
         {/* Logo and Header */}
         <div className="text-center mb-8">
@@ -66,7 +62,6 @@ const Login = () => {
         </div>
 
         <Card className="shadow-lg border-0">
-// ... existing code ...
           <CardHeader className="text-center pb-4">
             <CardTitle className="text-2xl text-wardrobe-navy">Welcome Back</CardTitle>
             <p className="text-sm text-muted-foreground">Sign in to your fashion journey</p>

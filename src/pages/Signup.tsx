@@ -6,6 +6,7 @@ import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { Link, useNavigate } from "react-router-dom";
 import { Eye, EyeOff, Mail, Lock, User, Check } from "lucide-react";
+import logoUrl from '/logo.png';
 
 const Signup = () => {
   const { toast } = useToast();
@@ -45,10 +46,6 @@ const Signup = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-wardrobe-teal/10 to-wardrobe-navy/10 flex items-center justify-center p-4">
-      import logoUrl from '/logo.png';
-
-const Signup = () => {
-// ... existing code ...
       <div className="w-full max-w-md">
         {/* Logo and Header */}
         <div className="text-center mb-8">
@@ -60,7 +57,6 @@ const Signup = () => {
         </div>
 
         <Card className="shadow-lg border-0">
-// ... existing code ...
           <CardHeader className="text-center pb-4">
             <CardTitle className="text-2xl text-wardrobe-navy">Create Account</CardTitle>
             <p className="text-sm text-muted-foreground">Join thousands of fashion enthusiasts</p>
