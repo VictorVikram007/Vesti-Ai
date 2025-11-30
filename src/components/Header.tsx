@@ -62,12 +62,40 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
         </svg>
       </Button>
       
+      import { useNavigate } from "react-router-dom";
+import { useToast } from "@/hooks/use-toast";
+import logoUiUrl from '/logo-ui.png';
+
+interface HeaderProps {
+  toggleSidebar: () => void;
+}
+//...
+        </svg>
+      </Button>
+      
       <div className="flex items-center gap-3">
-        <img src="/logo-ui.png" alt="Vesti AI" className="h-10 w-10" onError={(e) => { e.currentTarget.src = '/placeholder.svg'; }} />
+        <img src={logoUiUrl} alt="Vesti AI" className="h-10 w-10" onError={(e) => { e.currentTarget.src = '/placeholder.svg'; }} />
         <span className="font-bold text-lg text-wardrobe-navy">Vesti AI</span>
       </div>
       
       <div className="relative max-w-md w-full hidden md:flex ml-4">
+        <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
+        <Input 
+          placeholder="Search your wardrobe..." 
+          className="pl-8 w-full" 
+        />
+      </div>
+
+// ... existing code ...
+      </Button>
+      
+      <div className="flex items-center gap-3">
+        <img src={logoUiUrl} alt="Vesti AI" className="h-10 w-10" onError={(e) => { e.currentTarget.src = '/placeholder.svg'; }} />
+        <span className="font-bold text-lg text-wardrobe-navy">Vesti AI</span>
+      </div>
+      
+      <div className="relative max-w-md w-full hidden md:flex ml-4">
+// ... existing code ...
         <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
         <Input 
           placeholder="Search your wardrobe..." 

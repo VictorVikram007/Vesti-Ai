@@ -45,17 +45,22 @@ const Signup = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-wardrobe-teal/10 to-wardrobe-navy/10 flex items-center justify-center p-4">
+      import logoUrl from '/logo.png';
+
+const Signup = () => {
+// ... existing code ...
       <div className="w-full max-w-md">
         {/* Logo and Header */}
         <div className="text-center mb-8">
           <div className="flex items-center justify-center gap-3 mb-4">
-            <img src="/logo.png" alt="Vesti AI" className="h-12 w-12" />
+            <img src={logoUrl} alt="Vesti AI" className="h-12 w-12" />
             <h1 className="text-3xl font-bold text-wardrobe-navy">Vesti AI</h1>
           </div>
           <p className="text-muted-foreground">Start your AI-powered fashion journey</p>
         </div>
 
         <Card className="shadow-lg border-0">
+// ... existing code ...
           <CardHeader className="text-center pb-4">
             <CardTitle className="text-2xl text-wardrobe-navy">Create Account</CardTitle>
             <p className="text-sm text-muted-foreground">Join thousands of fashion enthusiasts</p>
