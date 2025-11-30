@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { Search, LogOut } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -6,8 +7,8 @@ import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigge
 import { useSettings } from "@/hooks/use-settings";
 import { useAuth } from "@/context/AuthContext";
 import { useNavigate } from "react-router-dom";
+
 import { useToast } from "@/hooks/use-toast";
-import logoUiUrl from '/logo-ui.png';
 
 interface HeaderProps {
   toggleSidebar: () => void;
@@ -62,7 +63,7 @@ const Header = ({ toggleSidebar }: HeaderProps) => {
       </Button>
       
       <div className="flex items-center gap-3">
-        <img src={logoUiUrl} alt="Vesti AI" className="h-10 w-10" onError={(e) => { e.currentTarget.src = '/placeholder.svg'; }} />
+        <img src="/logo-ui.png" alt="Vesti AI" className="h-10 w-10" onError={(e) => { e.currentTarget.src = '/placeholder.svg'; }} />
         <span className="font-bold text-lg text-wardrobe-navy">Vesti AI</span>
       </div>
       

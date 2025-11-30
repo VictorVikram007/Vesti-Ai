@@ -50,11 +50,11 @@ const CommunityFeedback = () => {
   });
 
   const memes = [
-    '/memes/1.jpg',
-    '/memes/2.jpg',
-    '/memes/3.png',
-    '/memes/4.jpg',
-    '/memes/5.jpg',
+    '/Vesti-Ai/memes/1.jpg',
+    '/Vesti-Ai/memes/2.jpg',
+    '/Vesti-Ai/memes/3.png',
+    '/Vesti-Ai/memes/4.jpg',
+    '/Vesti-Ai/memes/5.jpg',
   ];
 
   const handleNextMeme = () => {

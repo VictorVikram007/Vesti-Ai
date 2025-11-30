@@ -56,7 +56,23 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   }, []);
 
   const signOut = async () => {
-    await supabase.auth.signOut();
+    setUser(null); // Optimistically update UI
+    const { error } = await supabase.auth.signOut();
+    if (error) {
+      console.error("Error signing out:", error);
+      // If sign-out fails, you might want to re-fetch the session to revert the optimistic update
+      supabase.auth.getSession().then(({ data: { session } }) => {
+        if (session?.user) {
+          setUser({
+            id: session.user.id,
+            email: session.user.email || '',
+            name: session.user.user_metadata?.full_name || session.user.email || 'User',
+            avatar_url: session.user.user_metadata?.avatar_url
+          });
+        }
+      });
+      throw error; // Re-throw to be caught by the caller
+    }
   };
 
   const signIn = async (email: string, password: string) => {

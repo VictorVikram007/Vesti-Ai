@@ -1,4 +1,3 @@
-
 import { NavLink } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -74,7 +73,6 @@ const Sidebar = ({ isOpen, toggleSidebar }: SidebarProps) => {
             <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
           </svg>
         );
-
       case "ai-outfits":
         return (
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="h-5 w-5">
@@ -154,13 +152,9 @@ const Sidebar = ({ isOpen, toggleSidebar }: SidebarProps) => {
               className="h-5 w-5"
             >
               {isOpen ? (
-                <>
-                  <path d="m15 6-6 6 6 6" />
-                </>
+                <path d="m15 6-6 6 6 6" />
               ) : (
-                <>
-                  <path d="m9 6 6 6-6 6" />
-                </>
+                <path d="m9 6 6 6-6 6" />
               )}
             </svg>
           </Button>

@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -27,6 +26,7 @@ import ResetPassword from "./pages/ResetPassword";
 import AIChatbot from "./pages/AIChatbot";
 import AIOutfitSuggestions from "./pages/AIOutfitSuggestions";
 import ColorPalette from "./pages/ColorPalette";
+
 
 
 const queryClient = new QueryClient();
@@ -73,7 +73,7 @@ const App = () => (
           <TooltipProvider>
             <Toaster />
             <Sonner />
-            <BrowserRouter basename="/Vesti-Ai">
+            <BrowserRouter>
               <Routes>
                 <Route path="/" element={
                   <ProtectedRoute>
