@@ -73,7 +73,7 @@ const App = () => (
           <TooltipProvider>
             <Toaster />
             <Sonner />
-            <BrowserRouter>
+            <BrowserRouter basename="/Vesti-Ai">
               <Routes>
                 <Route path="/" element={
                   <ProtectedRoute>

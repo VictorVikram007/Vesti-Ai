@@ -73,6 +73,12 @@ Social sharing of outfits with friends.
 
 Integration with e-commerce APIs for shopping suggestions.
 
+### Blockchain Integration (Future)
+
+- **Digital Authenticity**: For high-value fashion items, we plan to integrate blockchain technology to create a verifiable, immutable record of authenticity. Each item can be registered on the blockchain as a unique digital asset or NFT (Non-Fungible Token).
+- **Proof of Ownership**: The NFT will serve as a digital certificate of ownership, which can be securely transferred if the item is sold or gifted.
+- **Traceability**: This creates a transparent history of the item's lifecycle, from the original designer to the current owner, helping to combat counterfeiting and enhance resale value.
+
 ---
 
 ## 🔧 Troubleshooting
