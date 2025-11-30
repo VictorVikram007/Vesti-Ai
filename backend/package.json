@@ -1,0 +1,20 @@
+{
+  "name": "fashion-persona-api",
+  "version": "1.0.0",
+  "description": "Mock API for Fashion Persona Setup",
+  "main": "persona-api.js",
+  "scripts": {
+    "start": "node persona-api.js",
+    "dev": "nodemon persona-api.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "keywords": ["fashion", "ai", "persona", "api"],
+  "author": "Vesti AI",
+  "license": "MIT"
+}
